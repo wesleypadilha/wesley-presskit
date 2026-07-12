@@ -1,24 +1,157 @@
-.music {
+.music{
 
-background:#151515;
+padding:100px 10%;
+
+background:rgba(0,0,0,0.65);
+
+backdrop-filter:blur(8px);
+
 color:white;
-padding:80px 10%;
-text-align:center;
 
 }
+
+
+
+.music-title{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
 
 
 .music h2{
 
+font-size:60px;
+
+letter-spacing:8px;
+
 color:#ff4fd8;
-font-size:40px;
 
 }
 
 
-.soundcloud{
 
-max-width:800px;
-margin:40px auto;
+.music-title p{
+
+font-size:20px;
+
+color:#ccc;
+
+margin-top:20px;
+
+}
+
+
+
+.sets-container{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:40px;
+
+}
+
+
+
+.set{
+
+background:rgba(255,255,255,0.05);
+
+border:1px solid rgba(255,255,255,0.15);
+
+padding:35px;
+
+border-radius:25px;
+
+position:relative;
+
+transition:.3s;
+
+}
+
+
+
+.set:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 30px rgba(255,79,216,0.3);
+
+}
+
+
+
+.set h3{
+
+font-size:25px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.set p{
+
+color:#ccc;
+
+margin-bottom:25px;
+
+}
+
+
+
+.badge{
+
+position:absolute;
+
+top:20px;
+
+right:20px;
+
+background:#ff4fd8;
+
+padding:8px 15px;
+
+border-radius:20px;
+
+font-size:12px;
+
+font-weight:bold;
+
+}
+
+
+
+iframe{
+
+border-radius:15px;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+.sets-container{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.music h2{
+
+font-size:40px;
+
+}
+
 
 }

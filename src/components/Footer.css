@@ -1,0 +1,37 @@
+.footer{
+
+padding:30px 10%;
+
+text-align:center;
+
+background:rgba(0,0,0,0.75);
+
+backdrop-filter:blur(8px);
+
+color:#aaa;
+
+font-size:14px;
+
+border-top:1px solid rgba(255,255,255,0.1);
+
+}
+
+
+
+.footer p:first-child{
+
+color:white;
+
+margin-bottom:10px;
+
+}
+
+
+
+.footer p:last-child{
+
+color:#ff4fd8;
+
+letter-spacing:3px;
+
+}
