@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import "./Hero.css";
+
 
 function Hero(){
 
@@ -7,27 +9,87 @@ return(
 <section className="hero" id="home">
 
 
-<div className="hero-content">
+<motion.div
+
+className="hero-content"
+
+initial={{ opacity: 0, y: 50 }}
+
+animate={{ opacity: 1, y: 0 }}
+
+transition={{ duration: 1 }}
+
+>
 
 
-<p className="hero-tag">
+<motion.p
+
+className="hero-tag"
+
+initial={{ opacity: 0 }}
+
+animate={{ opacity: 1 }}
+
+transition={{ duration: 1, delay: 0.2 }}
+
+>
+
 DJ • TRIBAL HOUSE
-</p>
+
+</motion.p>
 
 
-<h1>
+
+<motion.h1
+
+initial={{ opacity:0, scale:0.8 }}
+
+animate={{ opacity:1, scale:1 }}
+
+transition={{ duration:1, delay:0.3 }}
+
+>
+
 WESLEY
+
 <br/>
+
 PADILHA
-</h1>
+
+</motion.h1>
 
 
-<h2>
+
+
+<motion.h2
+
+initial={{ opacity:0 }}
+
+animate={{ opacity:1 }}
+
+transition={{ duration:1, delay:0.6 }}
+
+>
+
 Energia, groove e conexão com a pista.
-</h2>
+
+</motion.h2>
 
 
-<div className="hero-buttons">
+
+
+<motion.div
+
+className="hero-buttons"
+
+initial={{ opacity:0, y:30 }}
+
+animate={{ opacity:1, y:0 }}
+
+transition={{ duration:1, delay:0.9 }}
+
+>
+
 
 <a href="#musica">
 OUVIR SETS
@@ -39,10 +101,11 @@ BOOKING
 </a>
 
 
-</div>
+</motion.div>
 
 
-</div>
+
+</motion.div>
 
 
 </section>
@@ -50,5 +113,6 @@ BOOKING
 )
 
 }
+
 
 export default Hero;
