@@ -7,12 +7,13 @@ import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Performance from "./components/Performance";
-
+import Background from "./components/Background";
 function App(){
 
 return(
 
 <>
+<Background/>
 
 <Navbar/>
 
