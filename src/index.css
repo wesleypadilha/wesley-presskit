@@ -1,79 +1,137 @@
-* {
-
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-}
+*{
 
 
-html {
-
-  scroll-behavior: smooth;
-
-}
+margin:0;
 
 
+padding:0;
 
-body {
 
-  background-image:
-  linear-gradient(
-    rgba(0,0,0,0.75),
-    rgba(0,0,0,0.85)
-  ),
-  url("/photos/dj3.jpeg");
+box-sizing:border-box;
 
-  background-size: cover;
-
-  background-position: center;
-
-  background-attachment: fixed;
-
-  background-repeat: no-repeat;
-
-  color: white;
-
-  font-family: Arial, Helvetica, sans-serif;
-
-  animation: backgroundMove 20s ease-in-out infinite;
 
 }
 
 
 
-#root {
 
-  min-height: 100vh;
+
+html{
+
+
+scroll-behavior:smooth;
+
 
 }
 
 
 
-/* Movimento cinematográfico do fundo */
-
-@keyframes backgroundMove {
 
 
-  0% {
-
-    background-position: center;
-
-  }
+body{
 
 
-  50% {
-
-    background-position: center 55%;
-
-  }
+min-height:100vh;
 
 
-  100% {
+background-image:url("/photos/dj4.jpeg");
 
-    background-position: center;
 
-  }
+background-size:cover;
+
+
+background-position:center;
+
+
+background-attachment:fixed;
+
+
+animation:backgroundMove 20s ease-in-out infinite;
+
+
+color:white;
+
+
+font-family:Arial, Helvetica, sans-serif;
+
+
+}
+
+
+
+
+
+body::before{
+
+
+content:"";
+
+
+position:fixed;
+
+
+inset:0;
+
+
+background:rgba(0,0,0,0.55);
+
+
+z-index:-1;
+
+
+}
+
+
+
+
+
+@keyframes backgroundMove{
+
+
+0%{
+
+
+background-size:100%;
+
+
+}
+
+
+
+
+
+50%{
+
+
+background-size:108%;
+
+
+}
+
+
+
+
+
+100%{
+
+
+background-size:100%;
+
+
+}
+
+
+
+}
+
+
+
+
+
+#root{
+
+
+min-height:100vh;
 
 
 }

@@ -55,6 +55,9 @@ color:#ccc;
 margin-bottom:60px;
 
 
+line-height:1.6;
+
+
 }
 
 
@@ -112,7 +115,7 @@ cursor:pointer;
 transform:scale(1.05);
 
 
-box-shadow:0 0 35px rgba(255,79,216,0.4);
+box-shadow:0 0 35px rgba(255,79,216,0.5);
 
 
 }
@@ -148,6 +151,9 @@ border-radius:50px;
 font-weight:bold;
 
 
+letter-spacing:1px;
+
+
 transition:.3s;
 
 
@@ -163,13 +169,88 @@ transition:.3s;
 transform:translateY(-5px);
 
 
-box-shadow:0 0 25px #ff4fd8;
+box-shadow:0 0 30px #ff4fd8;
 
 
 }
 
 
 
+
+
+/* FOTO ABERTA */
+
+
+.lightbox{
+
+
+position:fixed;
+
+
+top:0;
+
+
+left:0;
+
+
+width:100%;
+
+
+height:100vh;
+
+
+background:rgba(0,0,0,0.92);
+
+
+display:flex;
+
+
+align-items:center;
+
+
+justify-content:center;
+
+
+z-index:2000;
+
+
+cursor:pointer;
+
+
+padding:20px;
+
+
+}
+
+
+
+
+
+.lightbox img{
+
+
+max-width:90%;
+
+
+max-height:90%;
+
+
+object-fit:contain;
+
+
+border-radius:20px;
+
+
+box-shadow:0 0 40px rgba(255,79,216,0.5);
+
+
+}
+
+
+
+
+
+/* MOBILE */
 
 
 @media(max-width:900px){
@@ -186,6 +267,8 @@ padding:80px 20px;
 
 
 
+
+
 .gallery h2{
 
 
@@ -196,6 +279,8 @@ letter-spacing:5px;
 
 
 }
+
+
 
 
 
@@ -212,13 +297,20 @@ margin-bottom:40px;
 
 
 
+
+
 .gallery-grid{
 
 
 grid-template-columns:1fr;
 
 
+gap:20px;
+
+
 }
+
+
 
 
 
@@ -232,13 +324,33 @@ height:450px;
 
 
 
+
+
 .drive-button{
 
 
 width:100%;
 
 
+max-width:350px;
+
+
 padding:18px;
+
+
+}
+
+
+
+
+
+.lightbox img{
+
+
+max-width:95%;
+
+
+max-height:80%;
 
 
 }

@@ -52,7 +52,7 @@ rel="noreferrer"
 
 >
 
-📸 Instagram
+Instagram
 
 </a>
 
@@ -70,7 +70,7 @@ rel="noreferrer"
 
 >
 
-🎧 SoundCloud
+ SoundCloud
 
 </a>
 
@@ -88,7 +88,7 @@ rel="noreferrer"
 
 >
 
-💬 WhatsApp
+ WhatsApp
 
 </a>
 

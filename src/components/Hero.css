@@ -19,7 +19,80 @@ text-align:center;
 padding:120px 20px 80px;
 
 
+position:relative;
+
+
+overflow:hidden;
+
+
 }
+
+
+
+
+
+.hero::after{
+
+
+content:"";
+
+
+position:absolute;
+
+
+inset:0;
+
+
+background:rgba(0,0,0,0.15);
+
+
+animation:heroPulse 8s ease-in-out infinite;
+
+
+pointer-events:none;
+
+
+}
+
+
+
+
+
+@keyframes heroPulse{
+
+
+0%{
+
+
+opacity:0.3;
+
+
+}
+
+
+
+50%{
+
+
+opacity:0.6;
+
+
+}
+
+
+
+100%{
+
+
+opacity:0.3;
+
+
+}
+
+
+
+}
+
 
 
 
@@ -30,7 +103,14 @@ padding:120px 20px 80px;
 max-width:900px;
 
 
+position:relative;
+
+
+z-index:1;
+
+
 }
+
 
 
 
@@ -51,6 +131,7 @@ margin-bottom:25px;
 
 
 }
+
 
 
 
@@ -196,6 +277,8 @@ letter-spacing:4px;
 
 
 
+
+
 .hero h1{
 
 
@@ -209,6 +292,8 @@ white-space:normal;
 
 
 }
+
+
 
 
 
@@ -240,6 +325,8 @@ gap:15px;
 
 
 
+
+
 .hero-buttons a{
 
 
@@ -263,6 +350,8 @@ padding:18px;
 
 
 
+
+
 /* CELULARES PEQUENOS */
 
 
@@ -283,6 +372,8 @@ letter-spacing:3px;
 
 
 
+
+
 .hero h2{
 
 
@@ -290,6 +381,8 @@ font-size:18px;
 
 
 }
+
+
 
 
 

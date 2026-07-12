@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import "./Gallery.css";
 
@@ -16,6 +17,10 @@ const photos = [
 "/photos/dj3.jpeg",
 
 ];
+
+
+
+const [selectedPhoto, setSelectedPhoto] = useState(null);
 
 
 
@@ -39,6 +44,7 @@ viewport={{once:true}}
 >
 
 
+
 <motion.h2
 
 initial={{opacity:0}}
@@ -54,6 +60,7 @@ viewport={{once:true}}
 GALERIA
 
 </motion.h2>
+
 
 
 
@@ -78,13 +85,13 @@ photos.map((photo,index)=>(
 
 <motion.img
 
-
 key={index}
 
 src={photo}
 
 alt={`Wesley Padilha DJ ${index + 1}`}
 
+onClick={()=>setSelectedPhoto(photo)}
 
 initial={{opacity:0, scale:0.8}}
 
@@ -101,16 +108,13 @@ delay:index * 0.15
 viewport={{once:true}}
 
 
->
-
-
-</motion.img>
+/>
 
 
 ))
 
-
 }
+
 
 
 </div>
@@ -127,11 +131,54 @@ href="https://drive.google.com/drive/folders/1K2COLQJCtqzake3gw96r868X20hCY9De"
 
 target="_blank"
 
+rel="noreferrer"
+
 >
 
 📸 VER TODAS AS FOTOS
 
 </a>
+
+
+
+
+
+
+
+{
+
+selectedPhoto && (
+
+
+<div
+
+className="lightbox"
+
+onClick={()=>setSelectedPhoto(null)}
+
+>
+
+
+
+<img
+
+src={selectedPhoto}
+
+alt="Foto ampliada Wesley Padilha"
+
+/>
+
+
+
+</div>
+
+
+)
+
+
+}
+
+
 
 
 
