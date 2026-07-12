@@ -18,6 +18,7 @@ color:white;
 
 
 
+
 .music-title{
 
 
@@ -28,6 +29,7 @@ margin-bottom:60px;
 
 
 }
+
 
 
 
@@ -44,7 +46,11 @@ letter-spacing:8px;
 color:#ff4fd8;
 
 
+margin-bottom:20px;
+
+
 }
+
 
 
 
@@ -66,6 +72,7 @@ margin-top:20px;
 
 
 
+
 .sets-container{
 
 
@@ -79,6 +86,7 @@ gap:40px;
 
 
 }
+
 
 
 
@@ -112,6 +120,7 @@ overflow:hidden;
 
 
 
+
 .set:hover{
 
 
@@ -126,7 +135,9 @@ box-shadow:0 0 35px rgba(255,79,216,0.35);
 
 
 
-/* destaque do set mais recente */
+
+/* SET MAIS RECENTE */
+
 
 .featured{
 
@@ -134,10 +145,11 @@ box-shadow:0 0 35px rgba(255,79,216,0.35);
 border:1px solid #ff4fd8;
 
 
-box-shadow:0 0 25px rgba(255,79,216,0.2);
+box-shadow:0 0 25px rgba(255,79,216,0.25);
 
 
 }
+
 
 
 
@@ -149,6 +161,7 @@ color:#ff4fd8;
 
 
 }
+
 
 
 
@@ -167,6 +180,7 @@ margin-bottom:15px;
 
 
 
+
 .set p{
 
 
@@ -180,6 +194,7 @@ line-height:1.6;
 
 
 }
+
 
 
 
@@ -222,19 +237,20 @@ letter-spacing:1px;
 
 
 
+
 .set iframe{
+
+
+width:100%;
 
 
 border-radius:15px;
 
 
-margin-top:10px;
+margin-top:15px;
 
 
 box-shadow:0 0 20px rgba(255,79,216,0.25);
-
-
-transition:.4s;
 
 
 }
@@ -242,7 +258,8 @@ transition:.4s;
 
 
 
-.set:hover iframe{
+
+.set iframe:hover{
 
 
 transform:scale(1.02);
@@ -253,7 +270,59 @@ transform:scale(1.02);
 
 
 
+
+iframe{
+
+
+max-width:100%;
+
+
+}
+
+
+
+
+
 @media(max-width:900px){
+
+
+
+.music{
+
+
+padding:80px 20px;
+
+
+}
+
+
+
+
+
+.music h2{
+
+
+font-size:40px;
+
+
+letter-spacing:5px;
+
+
+}
+
+
+
+
+
+.music-title p{
+
+
+font-size:16px;
+
+
+}
+
+
 
 
 
@@ -268,29 +337,35 @@ grid-template-columns:1fr;
 
 
 
-.music h2{
-
-
-font-size:40px;
-
-
-}
-
-
-
-.music{
-
-
-padding:80px 20px;
-
-}
-
-
 
 .set{
 
 
 padding:25px;
+
+
+}
+
+
+
+
+
+.set h3{
+
+
+font-size:21px;
+
+
+}
+
+
+
+
+
+.set iframe{
+
+
+height:300px;
 
 
 }

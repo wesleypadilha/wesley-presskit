@@ -1,10 +1,26 @@
+import { motion } from "framer-motion";
 import "./Contact.css";
+
 
 function Contact(){
 
 return(
 
-<section className="contact" id="contato">
+<motion.section
+
+className="contact"
+
+id="contato"
+
+initial={{opacity:0,y:50}}
+
+whileInView={{opacity:1,y:0}}
+
+transition={{duration:1}}
+
+viewport={{once:true}}
+
+>
 
 
 <h2>
@@ -12,45 +28,82 @@ BOOKING
 </h2>
 
 
+
 <p>
-Leve a experiência Wesley Padilha para seu evento.
+
+Entre em contato para shows, clubs, eventos e projetos especiais.
+
 </p>
+
+
 
 
 <div className="contact-buttons">
 
 
-<a 
+
+<a
+
 href="https://www.instagram.com/wesleypadilha_/"
+
 target="_blank"
+
+rel="noreferrer"
+
 >
-Instagram
+
+📸 Instagram
+
 </a>
 
 
-<a 
+
+
+
+<a
+
 href="https://soundcloud.com/wesleypadilha"
+
 target="_blank"
+
+rel="noreferrer"
+
 >
-SoundCloud
+
+🎧 SoundCloud
+
 </a>
 
 
-<a 
-href="https://wa.me/5541998264401?text=Olá%20Wesley,%20gostaria%20de%20contratar%20seu%20set."
+
+
+
+<a
+
+href="https://wa.me/5541998264401?text=Olá Wesley, gostaria de contratar seu set"
+
 target="_blank"
+
+rel="noreferrer"
+
 >
-WhatsApp
+
+💬 WhatsApp
+
 </a>
+
+
 
 
 </div>
 
 
-</section>
+</motion.section>
+
 
 )
 
 }
+
 
 export default Contact;
