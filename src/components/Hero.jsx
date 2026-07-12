@@ -1,31 +1,54 @@
-import "./Hero.css"
+import "./Hero.css";
 
-function Hero() {
-  return (
-    <section className="hero">
+function Hero(){
 
-      <h1>Wesley Padilha</h1>
+return(
 
-      <h2>DJ | Tribal House</h2>
+<section className="hero" id="home">
 
-      <p>
-        Energia, ritmo e experiência sonora.
-      </p>
 
-      <div className="buttons">
+<div className="hero-content">
 
-        <button>
-          SoundCloud
-        </button>
 
-        <button>
-          Contratar
-        </button>
+<p className="hero-tag">
+DJ • TRIBAL HOUSE
+</p>
 
-      </div>
 
-    </section>
-  )
+<h1>
+WESLEY
+<br/>
+PADILHA
+</h1>
+
+
+<h2>
+Energia, groove e conexão com a pista.
+</h2>
+
+
+<div className="hero-buttons">
+
+<a href="#musica">
+OUVIR SETS
+</a>
+
+
+<a href="#contato">
+BOOKING
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+)
+
 }
 
-export default Hero
+export default Hero;

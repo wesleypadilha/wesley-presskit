@@ -1,29 +1,136 @@
-nav {
-  width: 100%;
-  padding: 30px 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.navbar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+padding:25px 10%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+z-index:1000;
+
+background:rgba(0,0,0,0.35);
+
+backdrop-filter:blur(10px);
+
 }
 
-nav h2 {
-  font-size: 28px;
-  letter-spacing: 3px;
+
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
 }
 
-nav ul {
-  display: flex;
-  gap: 40px;
-  list-style: none;
+
+
+.logo span{
+
+font-size:35px;
+
+font-weight:900;
+
+color:#ff4fd8;
+
+letter-spacing:2px;
+
 }
 
-nav li {
-  cursor: pointer;
-  font-size: 17px;
-  color: #ddd;
-  transition: 0.3s;
+
+
+.logo p{
+
+font-size:16px;
+
+font-weight:bold;
+
+letter-spacing:3px;
+
+color:white;
+
 }
 
-nav li:hover {
-  color: #ff4fd8;
+
+
+.nav-links{
+
+display:flex;
+
+gap:30px;
+
+}
+
+
+
+.nav-links a{
+
+color:white;
+
+text-decoration:none;
+
+font-size:16px;
+
+text-transform:uppercase;
+
+letter-spacing:2px;
+
+transition:.3s;
+
+}
+
+
+
+.nav-links a:hover{
+
+color:#ff4fd8;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+.navbar{
+
+padding:20px;
+
+}
+
+
+.logo p{
+
+display:none;
+
+}
+
+
+.nav-links{
+
+gap:15px;
+
+}
+
+
+.nav-links a{
+
+font-size:12px;
+
+}
+
+
 }

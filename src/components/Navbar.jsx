@@ -1,18 +1,43 @@
-import "./Navbar.css"
+import "./Navbar.css";
 
-function Navbar() {
-  return (
-    <nav>
-      <h2>Wesley Padilha</h2>
+function Navbar(){
 
-      <ul>
-        <li>Sobre</li>
-        <li>Música</li>
-        <li>Eventos</li>
-        <li>Contato</li>
-      </ul>
-    </nav>
-  )
+return(
+
+<nav className="navbar">
+
+
+<div className="logo">
+
+<span>WP</span>
+
+<p>WESLEY PADILHA</p>
+
+</div>
+
+
+
+<div className="nav-links">
+
+<a href="#home">Home</a>
+
+<a href="#sobre">Sobre</a>
+
+<a href="#musica">Sets</a>
+
+<a href="#eventos">Eventos</a>
+
+<a href="#galeria">Galeria</a>
+
+<a href="#contato">Booking</a>
+
+</div>
+
+
+</nav>
+
+)
+
 }
 
-export default Navbar
+export default Navbar;
