@@ -1,0 +1,29 @@
+nav {
+  width: 100%;
+  padding: 30px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+nav li {
+  cursor: pointer;
+  font-size: 17px;
+  color: #ddd;
+  transition: 0.3s;
+}
+
+nav li:hover {
+  color: #ff4fd8;
+}
