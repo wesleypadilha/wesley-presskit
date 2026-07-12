@@ -218,18 +218,6 @@ transform:scale(1.02);
 
 
 
-.videos{
-
-
-grid-template-columns:1fr;
-
-
-}
-
-
-
-
-
 .performance{
 
 
@@ -237,8 +225,6 @@ padding:80px 20px;
 
 
 }
-
-
 
 
 
@@ -251,6 +237,37 @@ font-size:40px;
 }
 
 
+
+.performance p{
+
+
+font-size:17px;
+
+
+margin-bottom:40px;
+
+
+}
+
+
+
+.videos{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+.video-card{
+
+
+padding:20px;
+
+
+}
 
 
 

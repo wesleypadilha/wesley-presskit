@@ -1,67 +1,99 @@
 .about{
 
+
 padding:120px 10%;
+
 
 color:white;
 
+
 background:rgba(0,0,0,0.55);
+
 
 backdrop-filter:blur(8px);
 
+
 }
+
+
 
 
 
 .about h2{
 
+
 text-align:center;
+
 
 font-size:60px;
 
+
 letter-spacing:8px;
+
 
 color:#ff4fd8;
 
+
 margin-bottom:50px;
 
+
 }
+
+
 
 
 
 .about p{
 
+
 max-width:900px;
+
 
 margin:0 auto 30px;
 
+
 font-size:20px;
+
 
 line-height:1.8;
 
+
 color:#ddd;
+
 
 text-align:justify;
 
+
 }
+
+
 
 
 
 .about strong{
 
+
 color:#ff4fd8;
+
 
 font-weight:bold;
 
+
 }
+
+
 
 
 
 @media(max-width:900px){
 
 
+
 .about{
 
-padding:80px 20px;
+
+padding:90px 20px;
+
 
 }
 
@@ -69,7 +101,15 @@ padding:80px 20px;
 
 .about h2{
 
+
 font-size:40px;
+
+
+letter-spacing:5px;
+
+
+margin-bottom:35px;
+
 
 }
 
@@ -77,13 +117,18 @@ font-size:40px;
 
 .about p{
 
+
 font-size:16px;
+
+
+line-height:1.8;
+
 
 text-align:left;
 
-line-height:1.7;
 
 }
+
 
 
 }

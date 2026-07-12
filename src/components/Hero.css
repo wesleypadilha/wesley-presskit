@@ -1,36 +1,196 @@
 .hero{
 
+
 min-height:100vh;
+
 
 display:flex;
 
+
 align-items:center;
+
 
 justify-content:center;
 
+
 text-align:center;
 
-padding:120px 20px;
+
+padding:120px 20px 80px;
+
 
 }
+
+
 
 
 .hero-content{
 
+
 max-width:900px;
+
 
 }
 
 
+
+
 .hero-tag{
+
 
 color:#ff4fd8;
 
+
 font-size:20px;
+
 
 letter-spacing:6px;
 
+
 margin-bottom:25px;
+
+
+}
+
+
+
+
+.hero h1{
+
+
+font-size:120px;
+
+
+line-height:.85;
+
+
+font-weight:900;
+
+
+letter-spacing:10px;
+
+
+white-space:nowrap;
+
+
+}
+
+
+
+
+
+.hero h2{
+
+
+margin-top:35px;
+
+
+font-size:30px;
+
+
+font-weight:400;
+
+
+color:#ddd;
+
+
+}
+
+
+
+
+
+.hero-buttons{
+
+
+display:flex;
+
+
+justify-content:center;
+
+
+gap:25px;
+
+
+margin-top:50px;
+
+
+}
+
+
+
+
+
+.hero-buttons a{
+
+
+padding:18px 45px;
+
+
+border-radius:50px;
+
+
+background:#ff4fd8;
+
+
+color:white;
+
+
+text-decoration:none;
+
+
+font-weight:bold;
+
+
+transition:.3s;
+
+
+}
+
+
+
+
+
+.hero-buttons a:hover{
+
+
+transform:scale(1.08);
+
+
+box-shadow:0 0 30px #ff4fd8;
+
+
+}
+
+
+
+
+
+/* TABLET */
+
+
+@media(max-width:900px){
+
+
+
+.hero{
+
+
+padding:120px 20px 60px;
+
+
+}
+
+
+
+.hero-tag{
+
+
+font-size:15px;
+
+
+letter-spacing:4px;
+
 
 }
 
@@ -38,13 +198,15 @@ margin-bottom:25px;
 
 .hero h1{
 
-font-size:120px;
 
-line-height:.85;
+font-size:65px;
 
-font-weight:900;
 
-letter-spacing:10px;
+letter-spacing:5px;
+
+
+white-space:normal;
+
 
 }
 
@@ -52,27 +214,27 @@ letter-spacing:10px;
 
 .hero h2{
 
-margin-top:35px;
 
-font-size:30px;
+font-size:20px;
 
-font-weight:400;
 
-color:#ddd;
+line-height:1.5;
+
 
 }
 
 
 
+
+
 .hero-buttons{
 
-display:flex;
 
-justify-content:center;
+flex-direction:column;
 
-gap:25px;
 
-margin-top:50px;
+gap:15px;
+
 
 }
 
@@ -80,57 +242,65 @@ margin-top:50px;
 
 .hero-buttons a{
 
-padding:18px 45px;
 
-border-radius:50px;
+width:100%;
 
-background:#ff4fd8;
 
-color:white;
+max-width:320px;
 
-text-decoration:none;
 
-font-weight:bold;
+margin:auto;
 
-transition:.3s;
+
+padding:18px;
+
 
 }
 
 
 
-.hero-buttons a:hover{
-
-transform:scale(1.08);
-
-box-shadow:0 0 30px #ff4fd8;
-
 }
 
 
 
-@media(max-width:900px){
+/* CELULARES PEQUENOS */
+
+
+@media(max-width:400px){
+
 
 
 .hero h1{
 
-font-size:65px;
+
+font-size:48px;
+
+
+letter-spacing:3px;
+
 
 }
+
 
 
 .hero h2{
 
-font-size:20px;
+
+font-size:18px;
+
 
 }
 
 
 
-.hero-buttons{
+.hero-tag{
 
-flex-direction:column;
+
+font-size:13px;
+
 
 }
+
 
 
 }
