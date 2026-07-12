@@ -6,7 +6,7 @@ import Events from "./components/Events";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
+import Performance from "./components/Performance";
 
 function App(){
 
@@ -23,6 +23,8 @@ return(
 <Music/>
 
 <Events/>
+
+<Performance/>
 
 <Gallery/>
 
